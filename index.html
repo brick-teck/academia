@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080808" />
+    <meta
+      name="description"
+      content="PULSE FITNESS: website demonstrativo de uma rede de academias. Explore planos ilustrativos, modalidades, estrutura e as unidades Glória e Laguna."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta
+      property="og:title"
+      content="PULSE FITNESS — Sua evolução começa aqui"
+    />
+    <meta
+      property="og:description"
+      content="Um novo ritmo. Um próximo nível. Conheça esta experiência demonstrativa de academia."
+    />
+    <meta property="og:image" content="assets/images/hero-gloria.webp" />
+    <title>PULSE FITNESS — Sua evolução começa aqui</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="preload" as="image" href="assets/images/hero-gloria.webp" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header" id="header">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="PULSE FITNESS — início"
+          ><img
+            src="assets/logo/pulse-mark.svg"
+            alt=""
+            width="42"
+            height="42"
+          /><span
+            ><strong data-brand>PULSE</strong><small>FITNESS</small></span
+          ></a
+        >
+        <nav class="desktop-nav" aria-label="Navegação principal">
+          <a href="#inicio" class="active">Início</a><a href="#planos">Planos</a
+          ><a href="#modalidades">Modalidades</a
+          ><a href="#estrutura">Estrutura</a><a href="#unidades">Unidades</a
+          ><a href="#contato">Contato</a>
+        </nav>
+        <a class="button button-primary header-cta" href="#planos"
+          >Comece a treinar <span data-icon="arrow"></span
+        ></a>
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+      <nav
+        id="mobile-nav"
+        class="mobile-nav"
+        aria-label="Navegação móvel"
+        hidden
+      >
+        <a href="#inicio">Início</a><a href="#planos">Planos</a
+        ><a href="#modalidades">Modalidades</a><a href="#estrutura">Estrutura</a
+        ><a href="#unidades">Unidades</a><a href="#contato">Contato</a
+        ><a class="button button-primary" href="#planos"
+          >Comece a treinar <span data-icon="arrow"></span
+        ></a>
+      </nav>
+    </header>
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            id="hero-image"
+            src="assets/images/hero-gloria.webp"
+            alt=""
+            width="1920"
+            height="1280"
+            fetchpriority="high"
+          /><img
+            id="hero-image-next"
+            src="assets/images/hero-laguna.webp"
+            alt=""
+            width="1920"
+            height="1280"
+          />
+        </div>
+        <div class="hero-shade"></div>
+        <div class="container hero-body">
+          <p class="eyebrow hero-eyebrow">
+            <span class="red-line"></span> Transforme seus limites
+          </p>
+          <h1 id="hero-title">
+            Sua <em>evolução</em>começa aqui<span class="red-dot">.</span>
+          </h1>
+          <p class="hero-description">
+            Treine com estrutura, acompanhamento e tudo o que você precisa para
+            alcançar seu próximo nível.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="#planos"
+              >Conhecer planos <span data-icon="arrow"></span></a
+            ><a class="button button-outline" href="#estrutura"
+              >Explorar academia <span data-icon="arrow-diagonal"></span
+            ></a>
+          </div>
+          <div class="hero-caption">
+            <span class="caption-stroke"></span
+            ><span
+              >Disciplina hoje.<br /><strong
+                >Evolução todos os dias.</strong
+              ></span
+            >
+          </div>
+        </div>
+        <div class="hero-bottom container">
+          <div class="hero-unit-select">
+            <p class="eyebrow">Encontre sua unidade</p>
+            <div
+              class="unit-buttons"
+              data-unit-group
+              aria-label="Selecione a unidade"
+            >
+              <button data-unit="gloria" aria-pressed="true">
+                <span>01</span> Glória
+                <span data-icon="arrow-diagonal"></span></button
+              ><button data-unit="laguna" aria-pressed="false">
+                <span>02</span> Laguna <span data-icon="arrow-diagonal"></span>
+              </button>
+            </div>
+          </div>
+          <div class="hero-location" aria-live="polite">
+            <span data-icon="pin"></span>
+            <div>
+              <strong id="hero-unit-name">Unidade Glória</strong>
+              <p id="hero-unit-description">Seu próximo nível tem lugar.</p>
+              <small id="hero-address"
+                >Localização disponível na versão oficial</small
+              >
+            </div>
+          </div>
+          <a
+            class="scroll-cue"
+            href="#planos"
+            aria-label="Role para conhecer os planos"
+            ><span>Continue explorando</span><span data-icon="arrow-down"></span
+          ></a>
+        </div>
+        <span class="photo-note">Fotografia ilustrativa</span>
+      </section>
+
+      <div class="highlights">
+        <div class="container highlights-inner">
+          <span><i data-icon="dumbbell"></i> Estrutura completa</span
+          ><span><i data-icon="shield"></i> Treinamento de qualidade</span
+          ><span><i data-icon="users"></i> Aulas coletivas</span
+          ><span><i data-icon="activity"></i> Evolua todos os dias</span>
+        </div>
+      </div>
+
+      <section
+        class="section section-light"
+        id="planos"
+        aria-labelledby="plans-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">Seu objetivo. Seu plano.</p>
+              <h2 id="plans-title">
+                O plano certo para<br />sua <em>evolução.</em>
+              </h2>
+            </div>
+            <p>
+              Escolha a opção ideal para seus objetivos<br
+                class="desktop-only"
+              />
+              e comece a transformar sua rotina.
+            </p>
+          </div>
+          <div class="plans-toolbar">
+            <div
+              class="segmented"
+              data-period-group
+              aria-label="Período do plano"
+            >
+              <button data-period="mensal" aria-pressed="true">Mensal</button
+              ><button data-period="trimestral" aria-pressed="false">
+                Trimestral</button
+              ><button data-period="anual" aria-pressed="false">Anual</button>
+            </div>
+            <span class="selected-unit"
+              ><i data-icon="pin"></i> Planos da unidade
+              <strong data-unit-name>Glória</strong>
+              <a href="#unidades"
+                >Trocar <span data-icon="arrow-diagonal"></span></a
+            ></span>
+          </div>
+          <div id="plans-grid" class="plans-grid" aria-live="polite"></div>
+          <p class="disclaimer">
+            <span data-icon="info"></span> Planos, preços e condições
+            ilustrativos. Nenhuma contratação é realizada neste site.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="section"
+        id="modalidades"
+        aria-labelledby="modalities-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">Existe um treino para você</p>
+              <h2 id="modalities-title">Encontre seu <em>ritmo.</em></h2>
+            </div>
+            <p>
+              Força, energia ou equilíbrio.<br />Você escolhe como se
+              movimentar.
+            </p>
+          </div>
+          <div id="modalities-grid" class="modalities-grid"></div>
+          <p class="section-note">
+            Modalidades e fotografias demonstrativas. Consulte a disponibilidade
+            na versão oficial.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="section structure-section"
+        id="estrutura"
+        aria-labelledby="structure-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">Um espaço à altura dos seus objetivos</p>
+              <h2 id="structure-title">
+                Estrutura que<br />impulsiona <em>resultados.</em>
+              </h2>
+            </div>
+            <p>
+              Ambientes para focar no que importa:<br />o seu próximo treino.
+            </p>
+          </div>
+          <div class="filter-row">
+            <div
+              class="segmented dark"
+              data-gallery-group
+              aria-label="Filtrar estrutura por unidade"
+            >
+              <button data-gallery="todas" aria-pressed="true">Todas</button
+              ><button data-gallery="gloria" aria-pressed="false">Glória</button
+              ><button data-gallery="laguna" aria-pressed="false">
+                Laguna
+              </button>
+            </div>
+            <span class="gallery-hint"
+              ><i data-icon="expand"></i> Clique para explorar</span
+            >
+          </div>
+          <div id="gallery-grid" class="gallery-grid"></div>
+          <div class="gallery-notes">
+            <p>Fotografias ilustrativas, sem vínculo com uma academia real.</p>
+            <p id="structure-extras"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience-section" aria-labelledby="experience-title">
+        <div class="experience-image reveal">
+          <img
+            src="assets/images/functional.webp"
+            alt="Atleta em uma sessão ilustrativa de treinamento."
+            loading="lazy"
+            width="900"
+            height="900"
+          /><span class="image-label">Faça do treino o seu momento.</span>
+        </div>
+        <div class="experience-content reveal">
+          <p class="eyebrow">O que move você?</p>
+          <h2 id="experience-title">
+            Mais que uma academia.<br />Uma <em>nova rotina.</em>
+          </h2>
+          <p>
+            Cada treino representa uma nova oportunidade de evolução. Um
+            ambiente desenvolvido para motivar, desafiar e ajudar você a
+            construir uma rotina mais ativa.
+          </p>
+          <ul class="experience-list">
+            <li>
+              <span data-icon="check"></span> Espaço para diferentes objetivos
+            </li>
+            <li>
+              <span data-icon="check"></span> Uma equipe por perto em cada etapa
+            </li>
+            <li>
+              <span data-icon="check"></span> Energia para continuar em
+              movimento
+            </li>
+          </ul>
+          <a class="button button-primary" href="#unidades"
+            >Conhecer unidades <span data-icon="arrow"></span></a
+          ><small>Diferenciais ilustrativos desta demonstração.</small>
+        </div>
+      </section>
+
+      <section
+        class="section section-light"
+        id="equipe"
+        aria-labelledby="team-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">O próximo passo é em equipe</p>
+              <h2 id="team-title">
+                Quem te acompanha<br />na <em>evolução.</em>
+              </h2>
+            </div>
+            <p>
+              Orientação, presença e motivação.<br />Conheça nossa equipe
+              demonstrativa.
+            </p>
+          </div>
+          <div class="filter-row">
+            <div
+              class="segmented"
+              data-team-group
+              aria-label="Filtrar equipe por unidade"
+            >
+              <button data-team="todas" aria-pressed="true">Todos</button
+              ><button data-team="gloria" aria-pressed="false">Glória</button
+              ><button data-team="laguna" aria-pressed="false">Laguna</button>
+            </div>
+            <span class="subtle-label"
+              >Perfis fictícios · Fotos ilustrativas</span
+            >
+          </div>
+          <div id="team-grid" class="team-grid"></div>
+        </div>
+      </section>
+
+      <section
+        class="section units-section"
+        id="unidades"
+        aria-labelledby="units-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">Perto de você. Perto do próximo nível.</p>
+              <h2 id="units-title">
+                Sua evolução tem<br />um <em>endereço.</em>
+              </h2>
+            </div>
+            <p>
+              Duas unidades. A mesma vontade de ir além.<br />Escolha onde
+              começa a sua jornada.
+            </p>
+          </div>
+          <div
+            class="segmented dark unit-panel-tabs"
+            data-unit-group
+            aria-label="Unidade exibida"
+          >
+            <button data-unit="gloria" aria-pressed="true">01 — Glória</button
+            ><button data-unit="laguna" aria-pressed="false">
+              02 — Laguna
+            </button>
+          </div>
+          <div class="unit-panel" aria-live="polite">
+            <div class="unit-photo">
+              <img
+                id="unit-image"
+                src="assets/images/gym.webp"
+                alt="Fotografia ilustrativa de uma academia."
+                loading="lazy"
+                width="1000"
+                height="800"
+              /><span class="image-label">Fotografia ilustrativa</span>
+            </div>
+            <div class="unit-info">
+              <span class="eyebrow">Seu lugar de evolução</span>
+              <h3 id="unit-title">Unidade Glória</h3>
+              <p id="unit-description"></p>
+              <dl class="unit-details">
+                <div>
+                  <dt><span data-icon="pin"></span> Endereço</dt>
+                  <dd id="unit-address"></dd>
+                </div>
+                <div>
+                  <dt><span data-icon="clock"></span> Funcionamento</dt>
+                  <dd id="unit-hours"></dd>
+                </div>
+                <div>
+                  <dt><span data-icon="phone"></span> Telefone</dt>
+                  <dd id="unit-phone"></dd>
+                </div>
+              </dl>
+              <div id="unit-modalities" class="unit-tags"></div>
+              <div class="button-row">
+                <button class="button button-primary" data-contact>
+                  Falar com a unidade <span data-icon="arrow"></span></button
+                ><button class="button button-outline" id="directions-button">
+                  Como chegar <span data-icon="arrow-diagonal"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="map-container" class="map-container"></div>
+        </div>
+      </section>
+
+      <section
+        class="partners-section"
+        id="convenios"
+        aria-labelledby="partners-title"
+      >
+        <div class="container partners-inner">
+          <div>
+            <p class="eyebrow">Opções para a sua rotina</p>
+            <h2 id="partners-title">Mais formas<br />de <em>treinar.</em></h2>
+            <p>
+              Verifique sua elegibilidade e a disponibilidade<br
+                class="desktop-only"
+              />
+              da plataforma na unidade escolhida.
+            </p>
+          </div>
+          <div class="partners-content">
+            <div id="partners-grid" class="partners-grid"></div>
+            <p>
+              Apresentação demonstrativa. Não indica parceria oficial. Consulte
+              os planos e as unidades participantes na plataforma.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section testimonials-section"
+        aria-labelledby="testimonials-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">Cada rotina tem sua história</p>
+              <h2 id="testimonials-title">
+                Histórias que inspiram<br /><em>evolução.</em>
+              </h2>
+            </div>
+            <p>
+              Exemplos fictícios de depoimentos,<br />criados para demonstrar o
+              layout.
+            </p>
+          </div>
+          <div id="testimonials-grid" class="testimonials-grid"></div>
+        </div>
+      </section>
+
+      <section
+        class="section section-light"
+        id="faq"
+        aria-labelledby="faq-title"
+      >
+        <div class="container faq-layout">
+          <div class="faq-intro reveal">
+            <p class="eyebrow">Vamos esclarecer</p>
+            <h2 id="faq-title">
+              Seu próximo passo,<br />sem <em>dúvidas.</em>
+            </h2>
+            <p>Encontre as informações para<br />começar a sua jornada.</p>
+            <button class="text-button" data-contact>
+              Fale com a unidade <span data-icon="arrow-diagonal"></span>
+            </button>
+          </div>
+          <div id="faq-list" class="faq-list"></div>
+        </div>
+      </section>
+
+      <section class="final-cta" id="contato" aria-labelledby="cta-title">
+        <img
+          class="cta-image"
+          src="assets/images/hero-gloria.webp"
+          alt=""
+          loading="lazy"
+          width="1920"
+          height="1280"
+        />
+        <div class="container cta-content reveal">
+          <p class="eyebrow">O primeiro passo é uma decisão</p>
+          <h2 id="cta-title">
+            Não espere o momento perfeito.<br /><em>Comece agora.</em>
+          </h2>
+          <p>Seu próximo nível começa com uma decisão.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="#planos"
+              >Conhecer planos <span data-icon="arrow"></span></a
+            ><button class="button button-outline" data-contact>
+              Falar com a academia <span data-icon="arrow-diagonal"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a class="brand" href="#inicio" aria-label="PULSE FITNESS — início"
+              ><img
+                src="assets/logo/pulse-mark.svg"
+                alt=""
+                width="42"
+                height="42"
+              /><span
+                ><strong data-brand>PULSE</strong><small>FITNESS</small></span
+              ></a
+            >
+            <p data-brand-description>
+              Estrutura, movimento e motivação<br />para o seu próximo nível.
+            </p>
+            <span class="footer-tag">Movimento que transforma a rotina.</span>
+          </div>
+          <div>
+            <h3>Explore</h3>
+            <a href="#planos">Planos</a><a href="#modalidades">Modalidades</a
+            ><a href="#estrutura">Estrutura</a
+            ><a href="#equipe">Nossa equipe</a>
+          </div>
+          <div>
+            <h3>Unidades</h3>
+            <a href="#unidades" data-select-unit="gloria">Unidade Glória</a
+            ><a href="#unidades" data-select-unit="laguna">Unidade Laguna</a
+            ><a href="#convenios">Convênios</a
+            ><a href="#faq">Dúvidas frequentes</a>
+          </div>
+          <div>
+            <h3 data-contact-brand>Fale com a PULSE FITNESS</h3>
+            <button class="footer-contact" data-contact>
+              Atendimento <span data-icon="arrow-diagonal"></span>
+            </button>
+            <div id="social-links"></div>
+            <p class="footer-demo-label">
+              Um projeto demonstrativo.<br />Uma experiência de possibilidades.
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © <span id="year">2026</span>
+            <span data-full-brand>PULSE FITNESS</span>
+          </p>
+          <p>
+            Website demonstrativo. Marca, preços, planos e informações
+            ilustrativas.
+          </p>
+          <a href="#inicio"
+            >Voltar ao início <span data-icon="arrow-up"></span
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <button
+      class="floating-contact"
+      data-contact
+      aria-label="Falar com a unidade selecionada"
+    >
+      <span data-icon="chat"></span
+      ><span class="contact-label">Vamos treinar?</span>
+    </button>
+    <button class="back-top" aria-label="Voltar ao topo" hidden>
+      <span data-icon="arrow-up"></span>
+    </button>
+    <dialog
+      id="site-dialog"
+      aria-labelledby="dialog-title"
+      aria-describedby="dialog-description"
+    >
+      <div class="dialog-shell">
+        <button class="dialog-close" aria-label="Fechar janela">
+          <span data-icon="close"></span>
+        </button>
+        <div id="dialog-content"></div>
+      </div>
+    </dialog>
+    <div
+      id="site-status"
+      class="sr-only"
+      role="status"
+      aria-live="polite"
+    ></div>
+    <noscript
+      ><div class="noscript-note">
+        Ative o JavaScript para explorar planos, filtros e informações das
+        unidades. Esta é uma apresentação demonstrativa.
+      </div></noscript
+    >
+  </body>
+</html>

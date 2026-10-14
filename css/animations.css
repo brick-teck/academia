@@ -1,0 +1,67 @@
+/* Apenas microinterações e entrada de conteúdo. */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes photo-enter {
+  from {
+    opacity: 0.55;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hero-body {
+  animation: reveal-up 0.8s ease both;
+}
+.hero-bottom {
+  animation: reveal-up 0.8s 0.15s ease both;
+}
+.motion-ready .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s ease;
+}
+.motion-ready .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+.filter-enter {
+  animation: reveal-up 0.35s ease both;
+}
+.unit-photo img.is-updating {
+  animation: photo-enter 0.45s ease both;
+}
+.plan-price.is-updating {
+  animation: photo-enter 0.3s ease both;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .motion-ready .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .modality-card:hover img,
+  .modality-card:focus-within img,
+  .gallery-item:hover img,
+  .team-card:hover img {
+    transform: none;
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "state": "desktop",
+    "violations": []
+  },
+  {
+    "state": "modal",
+    "violations": []
+  },
+  {
+    "state": "mobile",
+    "violations": []
+  }
+]
